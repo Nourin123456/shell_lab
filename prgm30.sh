@@ -1,0 +1,23 @@
+#!/bin/bash
+echo "Enter a number:"
+read num
+flag=0
+if [ $num -le 1 ]
+then
+flag=1
+else
+for((i=2;i<=num/2;i++))
+do
+if [ $((num%i)) -eq 0 ]
+then
+flag=1
+break
+fi
+done
+fi
+if [ $flag -eq 0 ]
+then
+echo "Prime number"
+else
+echo "Not a prime number"
+fi
