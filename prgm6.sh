@@ -1,5 +1,5 @@
 #!/bin/bash
-arr=(red black blue)
+arr=(red green blue)
 echo ${arr[@]}
 echo ${arr[*]}
 echo ${arr[0]}
